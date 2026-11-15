@@ -1,0 +1,83 @@
+{
+ "conflicting_green": {
+  "label": "Conflicting-green SPaT spoofing",
+  "layer": "L1 protocol",
+  "scenarios": 20,
+  "detection_rate": 1.0,
+  "median_latency_ms": 0.0,
+  "p90_latency_ms": 0.0,
+  "msg_recall": 1.0,
+  "pr_auc": 1.0,
+  "n_tampered_msgs": 1551
+ },
+ "timemark": {
+  "label": "TimeMark / green-extension spoofing",
+  "layer": "L1 protocol",
+  "scenarios": 10,
+  "detection_rate": 1.0,
+  "median_latency_ms": 0.0,
+  "p90_latency_ms": 0.0,
+  "msg_recall": 1.0,
+  "pr_auc": 1.0,
+  "n_tampered_msgs": 1397
+ },
+ "ghost_queue": {
+  "label": "Ghost queue / Sybil BSM injection",
+  "layer": "L3 fused",
+  "scenarios": 10,
+  "detection_rate": 1.0,
+  "median_latency_ms": 49.99995231628418,
+  "p90_latency_ms": 509.99951362609863,
+  "msg_recall": 0.9933333333333333,
+  "pr_auc": 0.8960916099135046,
+  "n_tampered_msgs": 24000
+ },
+ "kinematic": {
+  "label": "Kinematic BSM falsification",
+  "layer": "L3 fused",
+  "scenarios": 30,
+  "detection_rate": 0.9666666666666667,
+  "median_latency_ms": 0.0,
+  "p90_latency_ms": 138.5998725891112,
+  "msg_recall": 0.4585635359116022,
+  "pr_auc": 0.08366365086539079,
+  "n_tampered_msgs": 1991
+ },
+ "_clean": {
+  "bsm_fpr": 0.0363575155697694,
+  "bsm_alarms": 216,
+  "alarms_per_veh_hour": 7.356392824398104,
+  "spat_fp_msgs": 0,
+  "spat_msgs": 57551,
+  "veh_hours": 29.36
+ },
+ "_meta": {
+  "seed": 3,
+  "intersection": "6311",
+  "date": "2025-02-07",
+  "threshold": 0.8560122356536278,
+  "train_s": 5759.9,
+  "test_s": 5759.8,
+  "weights": {
+   "pos_resid": 0.06454993003251887,
+   "implied_acc": -0.003159154869150834,
+   "jerk": 0.0813834755617594,
+   "speed_jump": -0.003159154869150834,
+   "acc_mismatch": 0.40669779657933186,
+   "speed_consist": 0.13607678117739389,
+   "speed_consist_w": 0.6886328576718426,
+   "offroad": -0.4362083029570288,
+   "to_stopbar": 0.5414227494413933,
+   "sig_go": 0.997527263132026,
+   "sig_stop": 0.8508352471390365,
+   "rel_speed": 0.01134411288937298,
+   "density": 1.9260247300404076,
+   "stopped_on_go": -0.4801971685537048,
+   "L1_flag": 0.0
+  },
+  "window": {
+   "start_s": 46800.0,
+   "hours": 4.0
+  }
+ }
+}

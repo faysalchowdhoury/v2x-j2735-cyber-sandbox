@@ -1,0 +1,83 @@
+{
+ "conflicting_green": {
+  "label": "Conflicting-green SPaT spoofing",
+  "layer": "L1 protocol",
+  "scenarios": 20,
+  "detection_rate": 1.0,
+  "median_latency_ms": 0.0,
+  "p90_latency_ms": 0.0,
+  "msg_recall": 0.987088444157521,
+  "pr_auc": 0.987105728526185,
+  "n_tampered_msgs": 1549
+ },
+ "timemark": {
+  "label": "TimeMark / green-extension spoofing",
+  "layer": "L1 protocol",
+  "scenarios": 10,
+  "detection_rate": 1.0,
+  "median_latency_ms": 0.0,
+  "p90_latency_ms": 0.0,
+  "msg_recall": 1.0,
+  "pr_auc": 0.9968759017631176,
+  "n_tampered_msgs": 1400
+ },
+ "ghost_queue": {
+  "label": "Ghost queue / Sybil BSM injection",
+  "layer": "L3 fused",
+  "scenarios": 10,
+  "detection_rate": 1.0,
+  "median_latency_ms": 199.99980926513672,
+  "p90_latency_ms": 599.9994277954102,
+  "msg_recall": 0.9913333333333333,
+  "pr_auc": 0.88784142250791,
+  "n_tampered_msgs": 24000
+ },
+ "kinematic": {
+  "label": "Kinematic BSM falsification",
+  "layer": "L3 fused",
+  "scenarios": 30,
+  "detection_rate": 1.0,
+  "median_latency_ms": 0.0,
+  "p90_latency_ms": 211.0002040863037,
+  "msg_recall": 0.4352385946512847,
+  "pr_auc": 0.08161936284016201,
+  "n_tampered_msgs": 1907
+ },
+ "_clean": {
+  "bsm_fpr": 0.032486113448914326,
+  "bsm_alarms": 193,
+  "alarms_per_veh_hour": 6.573073218096454,
+  "spat_fp_msgs": 0,
+  "spat_msgs": 57551,
+  "veh_hours": 29.36
+ },
+ "_meta": {
+  "seed": 0,
+  "intersection": "6311",
+  "date": "2025-02-07",
+  "threshold": 0.8707265327729332,
+  "train_s": 5759.9,
+  "test_s": 5759.8,
+  "weights": {
+   "pos_resid": 0.07282550186433928,
+   "implied_acc": 0.05088159624590664,
+   "jerk": 0.06645506133399734,
+   "speed_jump": 0.05088159624590664,
+   "acc_mismatch": 0.39173626729381117,
+   "speed_consist": 0.1278608081374395,
+   "speed_consist_w": 0.7385388821724205,
+   "offroad": -0.29877852620324596,
+   "to_stopbar": 0.4645532600148576,
+   "sig_go": 0.6889973752670325,
+   "sig_stop": 0.8342213043637776,
+   "rel_speed": 0.016275165812384525,
+   "density": 1.8024577280299718,
+   "stopped_on_go": -0.4603477012647463,
+   "L1_flag": 0.0
+  },
+  "window": {
+   "start_s": 46800.0,
+   "hours": 4.0
+  }
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "conflicting_green": {
+  "label": "Conflicting-green SPaT spoofing",
+  "layer": "L1 protocol",
+  "scenarios": 20,
+  "detection_rate": 1.0,
+  "median_latency_ms": 0.0,
+  "p90_latency_ms": 0.0,
+  "msg_recall": 1.0,
+  "pr_auc": 1.0,
+  "n_tampered_msgs": 1542
+ },
+ "timemark": {
+  "label": "TimeMark / green-extension spoofing",
+  "layer": "L1 protocol",
+  "scenarios": 10,
+  "detection_rate": 1.0,
+  "median_latency_ms": 0.0,
+  "p90_latency_ms": 0.0,
+  "msg_recall": 1.0,
+  "pr_auc": 0.9969051284304498,
+  "n_tampered_msgs": 1399
+ },
+ "ghost_queue": {
+  "label": "Ghost queue / Sybil BSM injection",
+  "layer": "L3 fused",
+  "scenarios": 10,
+  "detection_rate": 1.0,
+  "median_latency_ms": 199.99980926513672,
+  "p90_latency_ms": 499.9995231628418,
+  "msg_recall": 0.9904583333333333,
+  "pr_auc": 0.8753290793056916,
+  "n_tampered_msgs": 24000
+ },
+ "kinematic": {
+  "label": "Kinematic BSM falsification",
+  "layer": "L3 fused",
+  "scenarios": 30,
+  "detection_rate": 0.9666666666666667,
+  "median_latency_ms": 0.0,
+  "p90_latency_ms": 699.5998859405514,
+  "msg_recall": 0.41302136317395727,
+  "pr_auc": 0.07435745027706162,
+  "n_tampered_msgs": 1966
+ },
+ "_clean": {
+  "bsm_fpr": 0.03534758458172025,
+  "bsm_alarms": 210,
+  "alarms_per_veh_hour": 7.1520485792759345,
+  "spat_fp_msgs": 0,
+  "spat_msgs": 57551,
+  "veh_hours": 29.36
+ },
+ "_meta": {
+  "seed": 1,
+  "intersection": "6311",
+  "date": "2025-02-07",
+  "threshold": 0.875540315409085,
+  "train_s": 5759.9,
+  "test_s": 5759.8,
+  "weights": {
+   "pos_resid": 0.07138236251326756,
+   "implied_acc": 0.030399321745099784,
+   "jerk": 0.06747606625247039,
+   "speed_jump": 0.030399321745099784,
+   "acc_mismatch": 0.3984243569701106,
+   "speed_consist": 0.15756335039917516,
+   "speed_consist_w": 0.7575766658477953,
+   "offroad": -0.3072311717657081,
+   "to_stopbar": 0.8632620804842839,
+   "sig_go": 0.795208372511473,
+   "sig_stop": 0.8818436582341506,
+   "rel_speed": 0.017530976185222105,
+   "density": 1.8964324042892124,
+   "stopped_on_go": -0.44781443332592835,
+   "L1_flag": 0.0
+  },
+  "window": {
+   "start_s": 46800.0,
+   "hours": 4.0
+  }
+ }
+}

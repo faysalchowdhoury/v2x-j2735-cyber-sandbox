@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "v2x-j2735-cyber-sandbox"
+version = "0.1.0"
+description = "V2X / SAE J2735 SPaT & BSM cybersecurity replay and anomaly sandbox on real connected-vehicle data"
+requires-python = ">=3.10"
+readme = "README.md"
+license = { text = "MIT" }
+dependencies = ["numpy>=1.26", "pandas>=2.0", "scipy>=1.11", "matplotlib>=3.7", "plotly>=5.18", "streamlit>=1.30"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[tool.setuptools]
+packages = ["v2xbench_src"]
+package-dir = { "v2xbench_src" = "src" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

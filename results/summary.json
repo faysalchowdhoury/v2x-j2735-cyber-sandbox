@@ -1,0 +1,147 @@
+{
+  "attacks": {
+    "conflicting_green": {
+      "label": "Conflicting-green SPaT spoofing",
+      "layer": "L1 protocol",
+      "detection_rate": [
+        1.0,
+        0.0
+      ],
+      "msg_recall": [
+        0.9974176888315043,
+        0.00516462233699162
+      ],
+      "pr_auc": [
+        0.997421145705237,
+        0.005157708589526022
+      ],
+      "median_latency_ms": [
+        0.0,
+        0.0
+      ],
+      "scenarios": 100
+    },
+    "timemark": {
+      "label": "TimeMark / green-extension spoofing",
+      "layer": "L1 protocol",
+      "detection_rate": [
+        1.0,
+        0.0
+      ],
+      "msg_recall": [
+        1.0,
+        0.0
+      ],
+      "pr_auc": [
+        0.997647086745671,
+        0.0021171138877582665
+      ],
+      "median_latency_ms": [
+        0.0,
+        0.0
+      ],
+      "scenarios": 50
+    },
+    "ghost_queue": {
+      "label": "Ghost queue / Sybil BSM injection",
+      "layer": "L3 fused",
+      "detection_rate": [
+        1.0,
+        0.0
+      ],
+      "msg_recall": [
+        0.9920333333333332,
+        0.002024399773869886
+      ],
+      "pr_auc": [
+        0.8942313018636179,
+        0.012802707082953524
+      ],
+      "median_latency_ms": [
+        169.9998378753662,
+        87.17789573141407
+      ],
+      "scenarios": 50
+    },
+    "kinematic": {
+      "label": "Kinematic BSM falsification",
+      "layer": "L3 fused",
+      "detection_rate": [
+        0.9733333333333334,
+        0.013333333333333332
+      ],
+      "msg_recall": [
+        0.4265360470921835,
+        0.018200150201525565
+      ],
+      "pr_auc": [
+        0.07998785489142406,
+        0.0056535438610031356
+      ],
+      "median_latency_ms": [
+        0.0,
+        0.0
+      ],
+      "scenarios": 150
+    }
+  },
+  "clean": {
+    "bsm_fpr": [
+      0.03447231105874432,
+      0.001393721026391815
+    ],
+    "alarms_per_veh_hour": [
+      6.974950233503387,
+      0.28199834881694996
+    ],
+    "spat_fp_msgs": 0,
+    "spat_msgs": 287755
+  },
+  "n_seeds": 5,
+  "meta": {
+    "seed": 0,
+    "intersection": "6311",
+    "date": "2025-02-07",
+    "threshold": 0.8707265327729332,
+    "train_s": 5759.9,
+    "test_s": 5759.8,
+    "weights": {
+      "pos_resid": 0.07282550186433928,
+      "implied_acc": 0.05088159624590664,
+      "jerk": 0.06645506133399734,
+      "speed_jump": 0.05088159624590664,
+      "acc_mismatch": 0.39173626729381117,
+      "speed_consist": 0.1278608081374395,
+      "speed_consist_w": 0.7385388821724205,
+      "offroad": -0.29877852620324596,
+      "to_stopbar": 0.4645532600148576,
+      "sig_go": 0.6889973752670325,
+      "sig_stop": 0.8342213043637776,
+      "rel_speed": 0.016275165812384525,
+      "density": 1.8024577280299718,
+      "stopped_on_go": -0.4603477012647463,
+      "L1_flag": 0.0
+    },
+    "window": {
+      "start_s": 46800.0,
+      "hours": 4.0
+    }
+  },
+  "weights": {
+    "pos_resid": 0.07443909048198072,
+    "implied_acc": 0.028904789363837842,
+    "jerk": 0.07518049142828218,
+    "speed_jump": 0.028904789363837842,
+    "acc_mismatch": 0.42890374339816717,
+    "speed_consist": 0.12124028272101724,
+    "speed_consist_w": 0.7142487102296549,
+    "offroad": -0.4093197233492839,
+    "to_stopbar": 0.5262758302167617,
+    "sig_go": 0.8650380895577177,
+    "sig_stop": 0.8980875602674565,
+    "rel_speed": 0.012317703191231972,
+    "density": 1.923143177347841,
+    "stopped_on_go": -0.4695527175364934,
+    "L1_flag": 0.0
+  }
+}

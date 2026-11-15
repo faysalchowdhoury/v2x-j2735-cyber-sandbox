@@ -1,0 +1,83 @@
+{
+ "conflicting_green": {
+  "label": "Conflicting-green SPaT spoofing",
+  "layer": "L1 protocol",
+  "scenarios": 20,
+  "detection_rate": 1.0,
+  "median_latency_ms": 0.0,
+  "p90_latency_ms": 0.0,
+  "msg_recall": 1.0,
+  "pr_auc": 1.0,
+  "n_tampered_msgs": 1553
+ },
+ "timemark": {
+  "label": "TimeMark / green-extension spoofing",
+  "layer": "L1 protocol",
+  "scenarios": 10,
+  "detection_rate": 1.0,
+  "median_latency_ms": 0.0,
+  "p90_latency_ms": 0.0,
+  "msg_recall": 1.0,
+  "pr_auc": 1.0,
+  "n_tampered_msgs": 1396
+ },
+ "ghost_queue": {
+  "label": "Ghost queue / Sybil BSM injection",
+  "layer": "L3 fused",
+  "scenarios": 10,
+  "detection_rate": 1.0,
+  "median_latency_ms": 299.9997138977051,
+  "p90_latency_ms": 419.99959945678705,
+  "msg_recall": 0.98975,
+  "pr_auc": 0.8974785289007384,
+  "n_tampered_msgs": 24000
+ },
+ "kinematic": {
+  "label": "Kinematic BSM falsification",
+  "layer": "L3 fused",
+  "scenarios": 30,
+  "detection_rate": 0.9666666666666667,
+  "median_latency_ms": 0.0,
+  "p90_latency_ms": 211.0002040863037,
+  "msg_recall": 0.4119933370349806,
+  "pr_auc": 0.07266990513488993,
+  "n_tampered_msgs": 1801
+ },
+ "_clean": {
+  "bsm_fpr": 0.034842619087695675,
+  "bsm_alarms": 207,
+  "alarms_per_veh_hour": 7.049876456714849,
+  "spat_fp_msgs": 0,
+  "spat_msgs": 57551,
+  "veh_hours": 29.36
+ },
+ "_meta": {
+  "seed": 2,
+  "intersection": "6311",
+  "date": "2025-02-07",
+  "threshold": 0.8612127361947934,
+  "train_s": 5759.9,
+  "test_s": 5759.8,
+  "weights": {
+   "pos_resid": 0.09038155523449926,
+   "implied_acc": 0.04152307122762338,
+   "jerk": 0.07766908875604196,
+   "speed_jump": 0.04152307122762338,
+   "acc_mismatch": 0.44728494364529653,
+   "speed_consist": 0.10075211727712331,
+   "speed_consist_w": 0.7049463715698855,
+   "offroad": -0.4268710899174348,
+   "to_stopbar": 0.5041761948890325,
+   "sig_go": 0.857730842433597,
+   "sig_stop": 0.9545560042892536,
+   "rel_speed": 0.013189994167167865,
+   "density": 1.9430672205045096,
+   "stopped_on_go": -0.4700742373459891,
+   "L1_flag": 0.0
+  },
+  "window": {
+   "start_s": 46800.0,
+   "hours": 4.0
+  }
+ }
+}

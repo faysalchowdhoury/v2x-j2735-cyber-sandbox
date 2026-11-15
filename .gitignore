@@ -1,0 +1,17 @@
+# downloaded raw data (fetch with scripts/download_data.py); the committed test fixture lives in tests/fixtures
+/data/
+_data/
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# logs / scratch
+*.log
+streamlit.log
+smoke*.log
+.DS_Store

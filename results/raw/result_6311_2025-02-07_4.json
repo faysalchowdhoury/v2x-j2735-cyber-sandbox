@@ -1,0 +1,83 @@
+{
+ "conflicting_green": {
+  "label": "Conflicting-green SPaT spoofing",
+  "layer": "L1 protocol",
+  "scenarios": 20,
+  "detection_rate": 1.0,
+  "median_latency_ms": 0.0,
+  "p90_latency_ms": 0.0,
+  "msg_recall": 1.0,
+  "pr_auc": 1.0,
+  "n_tampered_msgs": 1552
+ },
+ "timemark": {
+  "label": "TimeMark / green-extension spoofing",
+  "layer": "L1 protocol",
+  "scenarios": 10,
+  "detection_rate": 1.0,
+  "median_latency_ms": 0.0,
+  "p90_latency_ms": 0.0,
+  "msg_recall": 1.0,
+  "pr_auc": 0.9944544035347873,
+  "n_tampered_msgs": 1399
+ },
+ "ghost_queue": {
+  "label": "Ghost queue / Sybil BSM injection",
+  "layer": "L3 fused",
+  "scenarios": 10,
+  "detection_rate": 1.0,
+  "median_latency_ms": 99.99990463256836,
+  "p90_latency_ms": 319.9996948242187,
+  "msg_recall": 0.9952916666666667,
+  "pr_auc": 0.9144158686902452,
+  "n_tampered_msgs": 24000
+ },
+ "kinematic": {
+  "label": "Kinematic BSM falsification",
+  "layer": "L3 fused",
+  "scenarios": 30,
+  "detection_rate": 0.9666666666666667,
+  "median_latency_ms": 0.0,
+  "p90_latency_ms": 1321.6000556945799,
+  "msg_recall": 0.4138634046890928,
+  "pr_auc": 0.087628905339616,
+  "n_tampered_msgs": 1962
+ },
+ "_clean": {
+  "bsm_fpr": 0.03332772260562195,
+  "bsm_alarms": 198,
+  "alarms_per_veh_hour": 6.7433600890315955,
+  "spat_fp_msgs": 0,
+  "spat_msgs": 57551,
+  "veh_hours": 29.36
+ },
+ "_meta": {
+  "seed": 4,
+  "intersection": "6311",
+  "date": "2025-02-07",
+  "threshold": 0.8565607793017324,
+  "train_s": 5759.9,
+  "test_s": 5759.8,
+  "weights": {
+   "pos_resid": 0.07305610276527863,
+   "implied_acc": 0.024879112469710214,
+   "jerk": 0.08291876523714174,
+   "speed_jump": 0.024879112469710214,
+   "acc_mismatch": 0.5003753525022857,
+   "speed_consist": 0.08394835661395433,
+   "speed_consist_w": 0.6815487738863304,
+   "offroad": -0.5775095259030019,
+   "to_stopbar": 0.25796486625424125,
+   "sig_go": 0.9857265944444595,
+   "sig_stop": 0.9689815873110644,
+   "rel_speed": 0.0032482669020123815,
+   "density": 2.047733803875102,
+   "stopped_on_go": -0.48933004719209866,
+   "L1_flag": 0.0
+  },
+  "window": {
+   "start_s": 46800.0,
+   "hours": 4.0
+  }
+ }
+}
